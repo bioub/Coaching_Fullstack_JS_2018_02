@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="hello/hello.component">
+<html lang="en" ng-app="app.module">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,11 @@
 <body>
   <hello-contact prenom="Romain" nom="'Bohdanowicz'"></hello-contact>
   <hello-contact prenom="Michel" nom="'Suissa'"></hello-contact>
+  <users-list></users-list>
   <script src="./node_modules/angular/angular.js"></script>
   <script src="./hello/hello.component.js"></script>
+  <script src="./services/user.service.js"></script>
+  <script src="./users-list/users-list.component.js"></script>
+  <script src="./app.module.js"></script>
 </body>
 </html>
