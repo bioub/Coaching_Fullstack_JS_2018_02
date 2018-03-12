@@ -1,0 +1,7 @@
+<h2>Liste des dossiers</h2>
+
+<ul>
+  <li *ngFor="let dossier of dossiers">
+    <a [routerLink]="[dossier.id]">{{dossier.title}}</a>
+  </li>
+</ul>

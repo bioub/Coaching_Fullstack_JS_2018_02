@@ -14,6 +14,6 @@ console.log('fin');
 // |
 // |             log(nb)  log(nb)
 // |=>-=>-=>-=>  =>     - =>
-// |filter     - forEach        -log('fin')
+// |filter     - forEach        - log('fin')
 // +--------------------------------------> temps
 // 

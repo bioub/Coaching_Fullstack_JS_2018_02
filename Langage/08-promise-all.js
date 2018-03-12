@@ -23,3 +23,14 @@ Promise.all([
   console.log(result); // Meme ordre que le tableau d'origine
   console.timeEnd('Temps avec Promise.all')
 });
+
+const tab = ['Request 1', 'Request 2', 'Request 3'];
+
+console.time('Temps avec Promise.all map');
+Promise.all(
+  tab.map(elt => fakeHttpRequest(elt))
+)
+  .then((result) => {
+    console.log(result); // Meme ordre que le tableau d'origine
+    console.timeEnd('Temps avec Promise.all map')
+  });
